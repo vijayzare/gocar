@@ -1,0 +1,19 @@
+<div class="table table-hover">
+  <h1>Fare Stracture</h1>
+  <tr class="table-primary">
+    <th>Category</th>
+    <th>Category</th>
+    <th>setting Capacity</th>
+    <th>Taxi fare Per/km</th>
+    <th>Min Fare</th>
+    <th></th>
+  </tr>
+  <tr class="table-hover st" *ngFor="let stracture of stractures">
+
+    <td>{{stracture.category}}</td>
+    <td>{{stracture.name}}</td>
+    <td>{{stracture.sets}}</td>
+    <td>{{stracture.pricePerKm |currency: 'INR'}}</td>
+  </tr>
+
+</div>

@@ -1,0 +1,21 @@
+
+<div class="row">
+  <div class="col-lg-3 col-md-6 mb-4" *ngFor="let car of cars |async">
+    <!-- <div class="card h-100"> -->
+      <!-- <img src="assets/images/logo.png" alt="luv2shop" class="img-responsive"> -->
+
+      <img class="card-img-top img-responsive" [src]="car.imageUrl" height="200">
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">{{car.carName}}</a>
+        </h4>
+
+        <h5>{{car.perKm | currency: 'INR'}}</h5>
+        <p class="card-text text-truncate">{{car.sets}} sets | car type {{car.carType }}</p>
+
+        <div class="card-footer">
+          <a href="#" class="btn btn-primary float-center">Book</a>
+        </div>
+      </div>
+    </div>
+  </div>
